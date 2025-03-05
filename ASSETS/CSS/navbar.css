@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 901;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+    
+    
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+
+
+nav a {
+    position: relative;
+    color: black;
+    
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+
+text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+nav ul li a img{
+    width: 20px;
+    height: auto;
+}
+
+.nav-item {
+    font-size: 13px;
+    color: black;
+    margin-top: 4px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+nav ul li:hover .nav-item{
+    color: #FB7C08;
+}
+
+.topbar .logo{
+    display: none;
+}
+
+nav ul li:hover img{
+    filter: sepia(1) saturate(3000%) hue-rotate(345deg) brightness(0.9);
+
+    color: #FB7C08;
+
+}
+
+
+
+
+
+
+
+.content {
+    margin-left: 90px; /* Same as the navbar width */
+    padding: 20px;
+    margin-top: 40px;
+    
+     /* Optional background color for content */
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.popup-menu{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(255, 255, 255);
+        height: 60px;
+        padding: 0 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .topbar .logo {
+        order: 2;
+        right: 20px; /* Pushes the logo to the right corner */
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-toggle {
+        order: 1;
+        cursor: pointer;
+    }
+
+    .popup-menu {
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: -80%; /* Off-screen initially */
+        height: 100%;
+        width: 30%; /* Original width of the menu */
+        background: rgb(255, 255, 255);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    
+
+    .popup-menu.active {
+        left: 0;
+    }
+
+    .popup-menu ul {
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    .popup-menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .popup-menu ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .fas{
+        font-size: 30px;
+    }
+
+    .topbar .logo{
+        display: block;
+    }
+
+    .heading{
+        height: auto;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content{
+        margin-left: 0;
+        position: absolute;
+        top: 60px;
+        
+    }
+
+    .dashboard-content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+
+    
+}
+
+
+.notification-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 900;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.notification-bar img{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.date {
+    margin-right: 20px;
+    font-family: DM Sans;
+font-size: 18px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+color: #231F20;
+width: auto;
+display: flex;
+align-items: center;
+
+}
+
+.notification-bar .date img{
+    height: 22px;
+    width: auto;
+    margin: 10px;
+
+}
+
+.notification-text {
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.alert-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+/* for dropdown of profile pic */
+
+.dropdown-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-checkbox {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown-menu label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Show dropdown when checkbox is checked */
+.dropdown-checkbox:checked + label + .dropdown-menu {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropdown-menu-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu-slide:hover{
+    background: #ebebeb;
+}
+
+.dropdown-menu-slide span{
+    color: black;
+    font-family: DM Sans;
+    font-size: 18px;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    right: 107%;
+    top: 0;
+    color: black;
+    font-family: DM Sans;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.settings-menu{
+    position: relative;
+    
+}
+
+
+
+
+
+.settings-menu:hover .submenu {
+    display: block;
+    
+    
+}
+
+.submenu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+.submenu a:hover{
+    background: #ebebeb;
+}
+
+/* for dropdown of profile pic */

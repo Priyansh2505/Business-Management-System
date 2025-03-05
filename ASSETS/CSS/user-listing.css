@@ -1,0 +1,288 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px; /* 20px gap between rows */
+     /* White background for the table */
+    
+}
+
+body{
+    background-color: #ebebeb;
+}
+th {
+    background-color: white; /* Green background for headers */
+    color: black;
+     /* White text for headers */
+}
+td {
+    background-color: white;
+     /* Light gray background for cells */
+}
+th, td {
+    padding: 20px;
+    text-align: left;
+    
+}
+td img {
+    width: 20px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between images */
+}
+.heading
+{
+width: 100%;
+display: flex;
+justify-content: space-between;
+height: 60px;
+align-items: center;
+
+}
+
+.table{
+
+padding: 5px;
+
+
+}
+
+.heading span{
+margin: 10px;
+padding: 10px;
+}
+
+.heading a{
+text-decoration: none;
+padding :10px;
+color: white;
+background-color: #231F20;
+border-radius: 10px;
+width: 178px;
+height: 42px;
+
+
+
+}
+
+.heading .head{
+font-family: DM Sans;
+font-size: 30px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+
+}
+
+.form-select{
+min-width: 200px;
+padding: 5px;
+margin-right: 10px;
+border: 1px solid #DFDFDF;
+}
+
+.search-bar{
+display: flex;
+align-items: center;
+
+width: 20%;
+min-width: 250px;
+border: 1px solid #DFDFDF;
+
+
+}
+
+.table-container{
+margin: 20px;
+overflow-x: scroll;
+scrollbar-width: thin;
+}
+
+.search-bar input{
+border: transparent;
+margin-left: 20px;
+width: 100%;
+padding: 5px;
+}
+
+.search-bar i{
+margin-left: 2px;
+}
+
+.head-part{
+display: flex;
+align-items: center;
+background-color: white;
+min-width: 1200px;
+padding-left: 10px;
+padding-right: 10px;
+padding: 20px;
+padding-top: 20px;
+border-radius: 10px;
+
+
+}
+
+thead{
+    background-color: white;
+}
+
+
+
+.head-part span{
+margin-right: 20px;
+margin-left: 10px;
+}
+
+.head-part .h2
+{
+
+font-family: DM Sans;
+font-size: 22px;
+margin-right: 10%;
+
+
+
+
+}
+
+
+th{
+    font-family: DM Sans;
+font-size: 17px;
+font-weight: 500;
+font-weight: bold;
+color: #000000;
+transform: translateY(-15px);
+padding-bottom: -30px;
+margin-left: 20px;
+margin-right: 20px;
+
+
+
+
+}
+
+.alert-line{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    background-color:#D5D5D5;
+    height: 2px;
+margin-left:20px;
+margin-right: 20px;
+
+}
+
+.form-select{
+    border-radius: 5px;
+}
+
+
+td{
+    font-family: DM Sans;
+font-size: 12px;
+font-weight: bold;
+color: #1C1D22;
+text-align: left;
+
+}
+
+.custom-table-container th{
+    font-size: 15px;font-weight: bold;
+
+}
+
+#alert tr {
+    padding-bottom: -40px;
+    align-items: center;
+}
+
+.custom-table-container td{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.swappable-date-container {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding: 10px;
+  }
+  .swappable-date-container input{
+    width: 40%;
+    height: 30px;
+    padding-right: 5px;
+    border: 1px dashed #DFDFDF;
+  }
+  .swap-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+  .swap-icon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* here goes the css for alert-management */
+
+  .high {
+    color: #E32F20;
+}
+.medium {
+    color: #FB7C08;
+}
+.low {
+    color: #65D46E;
+    
+}
+
+#alerts td{
+    font-size: 12px;
+}
+
+.head-part{
+    background-color: white;
+}
+
+.options-setting{
+    margin-left: auto;
+    padding: 5px;
+    padding-left: 15px;
+    border-left: 2px solid rgba(0,0,0,0.3);
+    
+}
+.custom-date-container{
+    
+    margin-left: 0;
+}
+.custom-h2{
+    margin-right: 20px;
+}
+
+.custom-view{
+    text-align: center;
+    align-items: center;
+
+}
+
+.total-detail-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 98%;
+}
+
+.total-detail-container .details{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: DM Sans;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+  
