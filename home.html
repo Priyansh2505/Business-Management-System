@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ASSETS/CSS/navbar.css">
+    <link rel="stylesheet" href="ASSETS/CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <div class="logo">
+            <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+          </div>
+        
+    </div>
+
+    <nav>
+        <ul>
+
+            <li>
+              <div class="logo">
+                <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+              </div>
+                
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">HOME</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">LOG OUT</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="popup-menu" id="popupMenu">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out1">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">LOG OUT</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="notification-bar">
+        <img src="ASSETS/IMAGES/Email.png" alt="">
+        <img src="ASSETS/IMAGES/Notifications.png" alt="Alert Icon" class="alert-icon">
+        <span class="date">
+            <img src="ASSETS/IMAGES/Icon.png" alt="">
+            19 May 2022 - 09H03
+        </span>
+        <img src="ASSETS/IMAGES/Image.png" alt="Profile Picture" class="profile-pic">
+        
+    </div>
+
+
+    <div class="content"> 
+
+        <div class="heading">
+            <h1>Dashboard</h1>
+            <a>
+                <i class="fas fa-plus"></i>
+                <p>Create opportunity</p>
+            </a>
+        </div>
+
+
+        <div class="dashboard-content">
+           
+            <div class="card-content1">
+                <div class="card">
+                    <img src="ASSETS/IMAGES/Add.png" alt="">
+                        <h2>Create <br> opportunity</h2>
+                    <button>Create</button>
+                </div>
+                <div class="card">
+                    <img src="ASSETS/IMAGES/Square.png" alt="">
+                    <h2>View <br>Opportunity</h2>
+                    <button>View</button>
+                </div>
+            </div>
+
+
+            <div class="card-content2">
+                <div class="head">
+                    <h2>My Alerts</h2>
+                    <img src="ASSETS/IMAGES/Notifications.png" alt="">
+
+                </div>
+
+                <h2 style="font-family: DM Sans;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 52.08px;
+                text-align: left;
+                ">09</h2>
+                <h5>In total</h5>
+
+             
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="text">
+                                <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                            <div class="s-content">
+                                <h4>ABC International frieght</h3>
+                                <h6>Exhibition import - china</h5>
+                     </div>
+        
+                        </div>
+                            
+        
+                            <div class="date">
+                                <span >25/12/2005</span>
+                                <img src="ASSETS/IMAGES/Color.png" alt="">
+                            </div>
+        
+                     </div>
+
+
+                     
+                            
+        
+                       
+
+
+                     
+
+
+                     <div class="slide">
+                        <div class="text">
+                                <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                            <div class="s-content">
+                                <h4>ABC International frieght</h3>
+                                <h6>Exhibition import - china</h5>
+                     </div>
+        
+                        </div>
+                            
+        
+                            <div class="date">
+                                <span style="background: #FF1B00;">25/12/2005</span>
+                                <img src="ASSETS/IMAGES/Color.png" alt="">
+                            </div>
+        
+                     </div>
+
+
+                     <div class="slide">
+                        <div class="text">
+                                <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                            <div class="s-content">
+                                <h4>ABC International frieght</h3>
+                                <h6>Exhibition import - china</h5>
+                     </div>
+        
+                        </div>
+                            
+        
+                            <div class="date">
+                                <span style="background: #70CF97;">25/12/2005</span>
+                                <img src="ASSETS/IMAGES/Color.png" alt="">
+                            </div>
+        
+                     </div>
+
+
+
+                     <div class="slide">
+                        <div class="text">
+                                <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                            <div class="s-content">
+                                <h4>ABC International frieght</h3>
+                                <h6>Exhibition import - china</h5>
+                     </div>
+        
+                        </div>
+                            
+        
+                            <div class="date">
+                                <span>25/12/2005</span>
+                                <img src="ASSETS/IMAGES/Color.png" alt="">
+                            </div>
+        
+                     </div>
+                </div>
+
+                <div class="button-container">
+                    <button>Manage</button>
+                </div>
+                
+            </div>
+
+
+            <div class="card-content3">
+                <div class="card">
+                    <h2>Pursue Opportunity</h2>
+                    <h1>09</h1>
+                    <h5>In total</h5>
+
+                    <button>
+                        view
+                        <img src="ASSETS/IMAGES/Right Up.png" alt="">
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2>Mobilise Opportunity</h2>
+                    <h1>07</h1>
+                    <h5>In total</h5>
+
+                    <button>
+                        view
+                        <img src="ASSETS/IMAGES/Right Up.png" alt="">
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2>Execute Opportunity</h2>
+                    <h1>03</h1>
+                    <h5>In total</h5>
+
+                    <button>
+                        view
+                        <img src="ASSETS/IMAGES/Right Up.png" alt="">
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2>Close Opportunity</h2>
+                    <h1>09</h1>
+                    <h5>In total</h5>
+
+                    <button>
+                        view
+                        <img src="ASSETS/IMAGES/Right Up.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('popupMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
