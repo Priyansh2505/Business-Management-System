@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="ASSETS/CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ASSETS/CSS/user-listing.css">
+    <link rel="stylesheet" href="ASSETS/CSS/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+
+.checkbox-label {
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    background-color: #65D46E;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.toggle-checkbox:checked + .checkbox-label {
+    background-color: grey;
+}
+
+        .table th{
+            font-family: DM Sans;
+font-size: 0.9vw;
+font-weight: 700;
+
+
+
+        }
+        .form-control {
+            width: 100%;
+        }
+        .table th, .table td {
+            
+            vertical-align: middle;
+        }
+        .table td input{
+            font-size: 12px;
+            text-align: start;
+        }
+        .cost-item-column {
+            width: 20%;
+            /* Adjust as needed for your desired size */
+        }
+        .uniform-size {
+            width: 150px; /* All other columns */
+        }
+        .form-control {
+            width: 100%;
+        }
+        .custom-valid{
+            display: flex;
+            gap: 10px;
+
+        }
+        .custom-valid input[type="checkbox"]{
+            display: none;
+        }
+        .quotation-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.quotation-details h3{
+    font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+
+
+}
+
+.quotation-details span{
+    font-family: DM Sans;
+font-size: 12px;
+font-weight: 700;
+}
+    </style>
+
+    
+</head>
+
+
+<body>
+    <div class="topbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <div class="logo">
+            <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+          </div>
+        
+    </div>
+
+    <nav>
+        <ul>
+
+            <li>
+              <div class="logo">
+                <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+              </div>
+                
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">LOG OUT</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="popup-menu" id="popupMenu">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">HOME</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out1">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">Log-out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="notification-bar">
+        <img src="ASSETS/IMAGES/Email.png" alt="">
+        <img src="ASSETS/IMAGES/Notifications.png" alt="Alert Icon" class="alert-icon">
+        <span class="date">
+            <img src="ASSETS/IMAGES/Icon.png" alt="">
+            19 May 2022 - 09H03
+        </span>
+        <img src="ASSETS/IMAGES/Image.png" alt="Profile Picture" class="profile-pic">
+        
+    </div>
+
+    <div class="content">
+
+        <span style="display: flex; align-items: center; padding: 10px;font-size: 22px;">
+            <span style="cursor: pointer;">
+                <img src="ASSETS/IMAGES/Left.png" alt="">
+            Back
+            </span>
+        </span>
+        <div class="heading2">
+            <span class="head" >Stage 2 : Mobilise </span>
+            <span>
+                <a href="" class="add-buttton">
+                    <img src="ASSETS/IMAGES/Color (2).png" alt="">
+                    <span>Close opportunity</span>
+                </a>
+            </span>
+        </div>
+
+        <div class="stepper-container">
+            <div class="stepper">
+                <div class="step active">
+                    <div class="circle">
+                        <img src="ASSETS/IMAGES/Step.png" alt="">
+                    </div>
+                    <div class="step-label">Project plan</div>
+                    <div class="line activated-line"></div>
+                </div>
+                <div class="step active">
+                    <div class="circle">
+                        <img src="ASSETS/IMAGES/Step.png" alt="">
+                    </div>
+                    <div class="step-label">Invoice paid</div>
+                    <div class="line activated-line"></div>
+                </div>
+                <div class="step active">
+                    <div class="circle">
+                        <img src="ASSETS/IMAGES/Step.png" alt="">
+                    </div>
+                    <div class="step-label">Pre-Booking Confirmation</div>
+                    <div class="line activated-line"></div>
+                </div>
+                <div class="step active-step">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Agent / Customer Onboarding</div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="pursue-form-content">
+            <div class="container">
+                <div class="form-responsive-container ">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Exporter/Importer/Exhibitor details</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Capture and confirm exporter/importer/exhibitor details</span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label custom-form-label">Is the exporter/importer also the client ?</label>
+                            
+                                <div class="address-option">
+                                    <span class="custom-radio">
+                                        <input type="radio" id="phyical" name="request1">
+                                        <label for="phyical" style="font-size: 15px;">Yes</label>
+                                    </span>
+                                    <span class="custom-radio">
+                                        <input type="radio" id="Postal" name="request1">
+                                        <label for="Postal" style="font-size: 15px;">No</label>
+                                    </span>
+                                </div>
+                            
+                            
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="company-name" class="form-label custom-form-label">Company Name</label>
+                                <input type="text" class="form-control" id="company-name" placeholder="Add">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="company-type" class="form-label">Type of Company</label>
+                                <select class="form-select" id="company-type">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">tech</option>
+                                    <option value="option2">non tech</option>
+                                    
+                                  </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="vat-number" class="form-label custom-form-label">VAT Number</label>
+                                <input type="number" class="form-control" id="vat-number" placeholder="Add name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="address" class="form-label custom-form-label">Importers/Exporters Code</label>
+                                <input type="text" class="form-control" id="contactPerson" placeholder="Add">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="address" class="form-label custom-form-label">Company Registration Number</label>
+                                <input type="text" class="form-control" id="contactPerson" placeholder="Add">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="mb-2 options">
+                                    <label for="registeredExporter" class="form-label custom-form-label">Exporter/Importer registered</label>
+                                    <input type="radio" id="registeredExporter" name="exporterOption">
+                                </div>
+                                <div class="mb-2 options">
+                                    <label for="useKGLCode" class="form-label custom-form-label">Use KGL exporter/importer code?</label>
+                                    <input type="radio" id="useKGLCode" name="exporterOption">   
+                                </div>
+                                <div class="mb-2 options">
+                                    <label for="newRegistration" class="form-label custom-form-label" >New exporter/importer code registration?</label>
+                                    <input type="radio" id="newRegistration" name="exporterOption">
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+
+
+        
+                        <h3 style="font-family: DM Sans;font-size: 16px;font-weight: 700">Physical address</h3>
+        
+                        <div class="mb-3">
+                            <label for="street-address" class="form-label custom-form-label">Street Address</label>
+                            <input type="text" class="form-control" id="street-address" placeholder="Search">
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="building-complex" class="form-label">Building/Complex</label>
+                                <input type="text" class="form-control" id="building-complex" placeholder="Add">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="suburb" class="form-label">Suburb</label>
+                                <input type="text" class="form-control" id="suburb" placeholder="Add">
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" id="status">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">Uk</option>
+                                    
+                                  </select>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="province" class="form-label">Province</label>
+                                <select class="form-select" id="province">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">Uk</option>
+                                    
+                                  </select>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <select class="form-select" id="city">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">Uk</option>
+                                    
+                                  </select>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="postal-code" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postal-code" placeholder="Add">
+                            </div>
+                        </div>
+
+                        <h3 style="font-family: DM Sans;font-size: 16px;font-weight: 700">Contact Person</h3>
+    <div id="contact-sections">
+        <div class="contact-section">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="building-complex" class="form-label">Contact Name & Surname</label>
+                    <input type="text" class="form-control" placeholder="Enter Name">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="con-number" class="form-label">Contact Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Contact number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="1st-email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter Email Id">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="o-number" class="form-label">Office Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Office Number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="w-number" class="form-label">Whatsapp Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Whatsapp Number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="2nd-email" class="form-label">Other Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter Other Email Adress">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="add-contact-btn" style="background: #FF9900;padding: 10px;border-radius: 10px;color: white;width: 150px;margin-bottom: 20px;">
+        <i class="fas fa-plus"></i>
+        Add
+    </button>
+
+    <div class="row d-flex align-items-center">
+        <!-- Exporter/Importer Documents -->
+        <div class="col-md-4 mb-3">
+            <label for="document" class="form-label">Exporter/Importer documents</label>
+            <select class="form-select" id="document">
+                <option value="" disabled selected>Add</option>
+                <option value="option1">1. Company reg documents</option>
+                <option value="option2">2. Country of origin </option>
+                <option value="option3">3. Certificate of acceptability</option>
+                <option value="option4">4. Halaal certificate</option>
+                <option value="option5">5. Other </option>
+            </select>
+        </div>
+    
+        <!-- Document Viewer -->
+        <div class="col-md-6 mb-3">
+            <a href="">
+                <div class="document-viewer">
+                    <div class="document-content">
+                        <img src="ASSETS/IMAGES/PDF (2).png" alt="">
+                        <h5>ABCFreight Exportplan.PDF</h5>
+                    </div>
+                    <h4>View</h4>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Action Menu -->
+        <div class="col-md-2 mb-3">
+            <div class="action-menu">
+                <a href="">
+                    <!-- <img src="ASSETS/IMAGES/Group 1000003057.png" alt=""> -->
+                    <img src="ASSETS/IMAGES/Group 1000003067.png" alt="">
+                </a>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                </a>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button id="add-contact-btn" style="background: #FF9900;padding: 10px;border-radius: 10px;color: white;width: 150px;margin-bottom: 20px;">
+        <i class="fas fa-plus"></i>
+        Add
+    </button>
+
+    <div class="mb-3">
+        <label for="job-title" class="form-label custom-edit-button custom-form-label">
+            <div>Add Notes</div>
+            <!-- <img src="ASSETS/IMAGES/Edit 2.png" alt=""> -->
+        </label>
+        <textarea class="form-control" id="job-title" rows="3" placeholder="Start typing notes here"></textarea>
+    </div>
+    
+        
+        
+                        
+        
+                        
+                    </form>
+                    <div class="form-button-container mb-3">
+                        <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+                           <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+                           <span>Delete</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           
+        
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Save & Next</button>
+        
+                           
+                        </div>
+                        </div>
+                </div>
+        
+                <div class="form-responsive-container">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Exporter/Importer listing</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">View and edit exporter/importer details </span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+
+                    <div class="mb-3">
+                        <label for="job-title" class="form-label custom-edit-button custom-form-label">Exporter/Importer listing</label>
+                    </div>
+
+                    <table class="table custom-table-onboarding">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Company Name</th>
+                                <th>Company Reg.</th>
+                                <th>Contact Person</th>
+                                <th>Contact No.</th>
+                                <th>Import/Export Reg?</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ABC Corp</td>
+                                <td>123456789</td>
+                                <td>John Doe</td>
+                                <td>+123456789</td>
+                                <td>Import</td>
+                                <td>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>XYZ Ltd.</td>
+                                <td>987654321</td>
+                                <td>Jane Smith</td>
+                                <td>+987654321</td>
+                                <td>Export</td>
+                                <td>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Global Inc.</td>
+                                <td>555555555</td>
+                                <td>Mike Johnson</td>
+                                <td>+555555555</td>
+                                <td>Import</td>
+                                <td>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+
+                    <button id="add-cargo-btn" style="background: #FF9900; padding: 10px; border-radius: 10px; color: white; width: 150px;margin-bottom:20px;">
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                    
+                    
+                    <div class="form-button-container mb-3">
+                        <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+                           <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+                           <span>Delete</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           
+        
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Save & Next</button>
+        
+                           
+                        </div>
+                        </div>
+                </div>
+        
+                <div class="form-responsive-container">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Pre-Book cargo - Manifest & Waybill</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Upload final manifest and waybill from shipshape</span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+                   
+
+                    <table class="table custom-table-onboarding">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Company Name</th>
+                                
+                                <th>Contact Person</th>
+                                <th>Contact No.</th>
+                                
+                                <th class="d-flex justify-content-end">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="custom-td">
+                                    1
+                                    <a href="">
+                                       <img src="ASSETS/IMAGES/Group 1000003057.png" alt="">
+                                        <!-- <img src="ASSETS/IMAGES/Group 1000003067.png" alt=""> -->
+                                    </a>
+                                </td>
+                                <td>ABC Corp</td>
+                                
+                                <td>John Doe</td>
+                                <td>+123456789</td>
+                                
+                                <td class="d-flex justify-content-end">
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="custom-td">
+                                    2
+                                    <a href="">
+                                       <img src="ASSETS/IMAGES/Group 1000003057.png" alt="">
+                                        <!-- <img src="ASSETS/IMAGES/Group 1000003067.png" alt=""> -->
+                                    </a>
+                                </td>
+                                <td>XYZ Ltd.</td>
+                                
+                                <td>Jane Smith</td>
+                                <td>+987654321</td>
+                                
+                                <td class="d-flex justify-content-end">
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="custom-td">
+                                    3
+                                    <a href="">
+                                       <img src="ASSETS/IMAGES/Group 1000003057.png" alt="">
+                                        <!-- <img src="ASSETS/IMAGES/Group 1000003067.png" alt=""> -->
+                                    </a>
+                                </td>
+                                <td>Global Inc.</td>
+                                
+                                <td>Mike Johnson</td>
+                                <td>+555555555</td>
+                                
+                                <td class="d-flex justify-content-end">
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Edit 3.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="ASSETS/IMAGES/Trash 3.png" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button id="add-cargo-btn" style="background: #FF9900; padding: 10px; border-radius: 10px; color: white; width: 150px;margin-bottom:20px;">
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+
+                    <div class="form-button-container mb-3">
+                        <button style="background:transparent;font-size: 17px; font-weight: 500;display: flex;border-radius:10px;align-items: center;border: none;">
+                         
+                           <span>Skip</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           
+                            <button style="font-size: 19px; padding: 10px;border: 1px solid black;border-radius: 10px;width: 160px;font-weight: 500;font-family: DM Sans; background: transparent;">Save</button>
+
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Create chat</button>
+        
+                           
+                        </div>
+                        </div>
+
+
+                </div>
+
+
+
+
+
+<div class="cargo-container">
+    <div class="form-responsive-container">
+        <div class="form-head">
+            <span style="font-size: 16px; font-weight: 700;">Chat group </span>
+            <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Setup the chat group for the transaction</span>
+        </div>
+        <button class="toggle-button">
+            <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+        </button>
+    </div>
+    
+    <div class="content-form">
+       
+        
+        <div class="cargo-data-container">
+            
+
+            <div class="mb-3">
+                <label for="job-title" class="form-label custom-edit-button custom-form-label">
+                    <div>Add Notes</div>
+                    <img src="ASSETS/IMAGES/Edit 2.png" alt="">
+                </label>
+                <textarea class="form-control" id="job-title" rows="3" placeholder="Start typing notes here"></textarea>
+            </div>
+        
+            <div class="mb-3">
+                <div class="upload-wrapper2">
+                    <div class="upload-container2 custom-upload">
+                        <div class="placeholder">
+                            <img src="ASSETS/IMAGES/Frame.png" alt="Placeholder">
+                            <span>Upload support documents?</span>
+                        </div>
+                        <input type="file" id="upload-picture" multiple accept="image/*,application/pdf" onchange="previewImage(event)">
+                    </div>
+                </div>
+                <div class="uploaded-files2" id="uploaded-files2"></div>
+            </div>
+            
+            <button id="add-cargo-btn" style="background: #FF9900; padding: 10px;display: none; border-radius: 10px; color: white; width: 150px;">
+                <i class="fas fa-plus"></i> Add
+            </button>
+            
+            
+
+            
+        </div>
+        <div class="form-button-container mb-3">
+            <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+               <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+               <span>Delete</span>
+            </button>
+            <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+               <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Save & Next</button>
+
+               
+            </div>
+            </div>
+    </div>
+</div>
+
+
+
+    
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+
+function toggleRowColor(checkbox) {
+    const row = checkbox.closest('tr');
+    if (checkbox.checked) {
+        row.style.backgroundColor = '#65D46E';
+    } else {
+        row.style.backgroundColor = '';
+    }
+}
+
+        const data = {
+    // Sample data; update this with your actual data object
+    'Service-type-1': [
+        { no: 1, item: 'Breakbulk Charge', unitCost: 100, quantity: 2, ttlBeforeVat: 200, discount: 10, vat: 'Yes', vatPercent: 15, ttlBeforeVatAfterDiscount: 180, total: 207 },
+        { no: 2, item: 'Airway Bill', unitCost: 150, quantity: 1, ttlBeforeVat: 150, discount: 0, vat: 'No', vatPercent: 0, ttlBeforeVatAfterDiscount: 150, total: 150 },
+        // Add other rows as needed
+    ]
+};
+
+function updateTable() {
+    const serviceType = document.getElementById('Service-type').value;
+    const tableBody = document.getElementById('costTable').querySelector('tbody');
+    
+    // Clear existing rows
+    tableBody.innerHTML = '';
+
+    // Get the corresponding data based on the selected service type
+    const rows = data[serviceType];
+
+    // Add rows to the table body
+    rows.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="uniform-size">${row.no} 
+                <input type="checkbox" id="toggleCheckbox${row.no}" class="toggle-checkbox" onchange="toggleInputs(this)">
+                <label for="toggleCheckbox${row.no}" class="checkbox-label">✔</label>
+            </td>
+            <td class="cost-item-column"><input type="text" class="form-control" value="${row.item}" readonly></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.unitCost}" readonly></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.quantity}" readonly></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.ttlBeforeVat}" readonly></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.discount}" placeholder="0%" readonly></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.ttlBeforeVatAfterDiscount}" readonly></td>
+            <td class="col-md-1 mb-3">
+                <select class="custom-select-quote" onchange="handleVatChange(this)">
+                    <option value="Yes" ${row.vat === 'Yes' ? 'selected' : ''}>YES</option>
+                    <option value="No" ${row.vat === 'No' ? 'selected' : ''}>NO</option>
+                </select>
+            </td>
+            <td class="uniform-size"><input type="text" class="form-control vat-percent" value="${row.vatPercent}" placeholder="0%" ${row.vat === "No" ? 'readonly' : ''}></td>
+            <td class="uniform-size"><input type="text" class="form-control" value="${row.total}" readonly></td>
+        `;
+        tableBody.appendChild(tr);
+    });
+}
+
+// Function to enable/disable VAT percentage based on VAT selection
+function handleVatChange(selectElement) {
+    const vatPercentInput = selectElement.closest('tr').querySelector('.vat-percent');
+    if (selectElement.value === 'No') {
+        vatPercentInput.value = '0';
+        vatPercentInput.setAttribute('readonly', true);
+    } else {
+        vatPercentInput.removeAttribute('readonly');
+    }
+}
+
+        function toggleMenu() {
+            const menu = document.getElementById('popupMenu');
+            menu.classList.toggle('active');
+        }
+
+        document.getElementById('add-cargo-btn').addEventListener('click', function() {
+            // Get the values from the input fields
+            const number = document.getElementById('number').value;
+            const length = document.getElementById('Length').value;
+            const width = document.getElementById('Width').value;
+            const height = document.getElementById('Height').value;
+            const volume = document.getElementById('Volume').value;
+            const weight = document.getElementById('Weight').value;
+            const standardCode = document.getElementById('Standard-Code').value;
+
+            // Show the table container
+            document.getElementById('table-container').classList.remove('hidden-table');
+
+            // Create a new row and append it to the table
+            const table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            newRow.innerHTML = `
+                <td>${number}</td>
+                <td>${length}</td>
+                <td>${width}</td>
+                <td>${height}</td>
+                <td>${volume}</td>
+                <td>${weight}</td>
+                <td>${standardCode}</td>
+            `;
+
+            // Clear the input fields
+            document.getElementById('number').value = '';
+            document.getElementById('Length').value = '';
+            document.getElementById('Width').value = '';
+            document.getElementById('Height').value = '';
+            document.getElementById('Volume').value = '';
+            document.getElementById('Weight').value = '';
+            document.getElementById('Standard-Code').value = '';
+
+            updateTotalCargoWeight();
+        });
+
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.parentElement.nextElementSibling;
+                const img = this.querySelector('img');
+
+                document.querySelectorAll('.content').forEach(c => {
+                    if (c !== content) {
+                        c.classList.remove('show');
+                        c.previousElementSibling.querySelector('img').classList.remove('rotate');
+                    }
+                });
+
+                content.classList.toggle('show');
+                img.classList.toggle('rotate');
+            });
+        });
+
+        document.querySelectorAll('.step').forEach((step, index) => {
+            step.addEventListener('click', () => {
+                document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+                for (let i = 0; i <= index; i++) {
+                    document.querySelectorAll('.step')[i].classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const checklists = document.querySelectorAll('.checklist');
+
+            checklists.forEach(checklist => {
+                const radios = checklist.querySelectorAll('.checklist-radio input[type="radio"]');
+                const statusCheckbox = checklist.querySelector('.status-checkbox');
+                const checkIcon = statusCheckbox.querySelector('.check');
+                const crossIcon = statusCheckbox.querySelector('.cross');
+
+                radios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        if (this.value === 'right') {
+                            statusCheckbox.classList.remove('red');
+                            statusCheckbox.classList.add('green');
+                            checkIcon.style.visibility = 'visible';
+                            crossIcon.style.visibility = 'hidden';
+                        } else {
+                            statusCheckbox.classList.remove('green');
+                            statusCheckbox.classList.add('red');
+                            checkIcon.style.visibility = 'hidden';
+                            crossIcon.style.visibility = 'visible';
+                        }
+                    });
+                });
+            });
+        });
+
+
+
+        let contactCount = 1;
+    const addContactBtn = document.getElementById('add-contact-btn');
+    const contactSections = document.getElementById('contact-sections');
+
+
+
+    const numberToWords = (num) => {
+        const words = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"];
+        return words[num - 1] || num + "th";
+    };
+
+    addContactBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        contactCount++;
+        const newContactSection = document.createElement('div');
+        newContactSection.classList.add('contact-section');
+        newContactSection.innerHTML = `
+            <h3 style="font-family: DM Sans;font-size: 16px;font-weight: 700">${numberToWords(contactCount)} Contact Person</h3>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="building-complex" class="form-label">Contact Name & Surname</label>
+                    <input type="text" class="form-control" placeholder="Enter Name">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="con-number" class="form-label">Contact Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Contact number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="1st-email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter Email Id">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="o-number" class="form-label">Office Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Office Number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="w-number" class="form-label">Whatsapp Number</label>
+                    <input type="number" class="form-control" placeholder="Enter Whatsapp Number">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="2nd-email" class="form-label">Other Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter Other Email Adress">
+                </div>
+        `;
+        contactSections.appendChild(newContactSection);
+    });
+
+    function previewImage(event) {
+            const files = event.target.files;
+            const uploadedFilesContainer = document.getElementById('uploaded-files2');
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const fileURL = URL.createObjectURL(file);
+                const div = document.createElement('div');
+                div.classList.add('uploaded-file2');
+                div.onclick = function() {
+                    window.open(fileURL, '_blank');
+                };
+
+                const img = document.createElement('img');
+                img.src = 'ASSETS/IMAGES/Frame.png';
+
+                const fileName = document.createElement('span');
+                fileName.textContent = file.name;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.classList.add('delete-button');
+                deleteButton.innerHTML = '&minus;';
+                deleteButton.onclick = function(event) {
+                    event.stopPropagation();
+                    URL.revokeObjectURL(fileURL);
+                    div.remove();
+                };
+
+                div.appendChild(img);
+                div.appendChild(fileName);
+                div.appendChild(deleteButton);
+                uploadedFilesContainer.appendChild(div);
+            }
+        }
+
+        function updateTotalCargoWeight() {
+    const table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+    let totalWeight = 0;
+
+    for (let i = 0; i < table.rows.length; i++) {
+        const weight = parseFloat(table.rows[i].cells[5].innerText) || 0;
+        totalWeight += weight;
+    }
+
+    document.getElementById('total-cargo-weight').innerText = `${totalWeight}kg`;
+}
+
+function selectOption(option) {
+    // Remove the 'selected' class from all verified-boxes
+    const verifiedBoxes = document.querySelectorAll('.verified-box');
+    verifiedBoxes.forEach(function(box) {
+        box.classList.remove('selected');
+    });
+
+    // Add the 'selected' class only to the verified-box inside the clicked option
+    const verifiedBox = option.querySelector('.verified-box');
+    verifiedBox.classList.add('selected');
+}
+
+        
+
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJbFVGzF3e+6IBvVnE2XpX+EknBAt61fr1W+8abcT/b1VQZHL" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIyglg2jE65vD5vLC/Jgz9IR7qUwxQK4kU1ASjG7" crossorigin="anonymous"></script>
+    
+</body>
+</html>
