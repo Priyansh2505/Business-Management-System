@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ASSETS/CSS/popup.css">
+    <style scoped>
+        .btn1{
+            font-family: DM Sans;
+            font-size: 18px;
+            background: white;
+            border: 2px solid black;
+             border-radius: 10px;
+             width: 45%;
+             height: 50px;
+             color: black;
+             
+
+
+        }
+
+        .btn2{
+            font-family: DM Sans;
+            font-size: 18px;
+            background: black;
+            border: 2px solid black;
+            color: white;
+             border-radius: 10px;
+             width: 45%;
+             height: 50px;
+
+
+        }
+
+        .popup-btn-container{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: center;
+        }
+
+        .popup-circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #FF0C00;
+        }
+
+        .popup img{
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <img src="ASSETS/IMAGES/triangle2.png" alt="">
+        <h1>Change owner of this <br> transaction ?</h1>
+        
+        <span>This change will allocate this transaction to a new owner. Previous owner will no longer have access. </span>
+        <div class="popup-btn-container">
+            <button class="btn1">No, Go back</button>
+        <button class="btn2">Yes, Change</button>
+        </div>
+    </div>
+</body>
+</html>

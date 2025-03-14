@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="ASSETS/CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ASSETS/CSS/user-listing.css">
+    <link rel="stylesheet" href="ASSETS/CSS/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
+
+    
+</head>
+<body>
+    <div class="topbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <div class="logo">
+            <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+          </div>
+        
+    </div>
+
+    <nav>
+        <ul>
+
+            <li>
+              <div class="logo">
+                <img src="ASSETS/IMAGES/image 2.png" alt="Logo">
+              </div>
+                
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">LOG OUT</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="popup-menu" id="popupMenu">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Home.png" alt="">
+                    <span class="nav-item">HOME</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Phone.png" alt="">
+                    <span class="nav-item">Telephone system</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Close.png" alt="">
+                    <span class="nav-item">Notes & Docs</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Globe 2.png" alt="">
+                    <span class="nav-item">ShipShape</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Clipboard.png" alt="">
+                    <span class="nav-item">Sharepoint</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/Text.png" alt="">
+                    <span class="nav-item">Invoices & Payments</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="ASSETS/IMAGES/File.png" alt="">
+                    <span class="nav-item">Quote</span>
+                </a>
+            </li>
+            <li class="log-out1">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">Log-out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="notification-bar">
+        <img src="ASSETS/IMAGES/Email.png" alt="">
+        <img src="ASSETS/IMAGES/Notifications.png" alt="Alert Icon" class="alert-icon">
+        <span class="date">
+            <img src="ASSETS/IMAGES/Icon.png" alt="">
+            19 May 2022 - 09H03
+        </span>
+        <img src="ASSETS/IMAGES/Image.png" alt="Profile Picture" class="profile-pic">
+        
+    </div>
+
+    <button style="display: flex; align-items: center; padding: 10px;">
+        <img src="ASSETS/IMAGES/Left.png" alt="">
+        Back
+    </button>
+
+    <div class="content">
+        <div class="heading2">
+            <span class="head" >Stage 1 : Pursue </span>
+            <span>
+                <a href="" class="add-buttton">
+                    <img src="ASSETS/IMAGES/Color (2).png" alt="">
+                    <span>Close opportunity</span>
+                </a>
+            </span>
+        </div>
+
+        <div class="stepper-container">
+            <div class="stepper">
+                <div class="step active">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Opportunity checklist</div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Opportunity details</div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Create quote</div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Approve quote</div>
+                    <div class="line"></div>
+                </div>
+                <div class="step">
+                    <div class="circle">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="step-label">Client Approval
+                        Status</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pursue-form-content">
+            <div class="container">
+                <div class="form-responsive-container">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Customer Detail</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Capture customer detail</span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="assigneddate1" class="form-label custom-form-label">Assigned Date</label>
+                                <input type="date" class="form-control" id="assigneddate1" placeholder="Add" readonly>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="companyRegNo" class="form-label custom-form-label">Company Registration Number</label>
+                                <input type="text" class="form-control" id="companyRegNo" placeholder="Add">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contactPerson" class="form-label custom-form-label">Contact Person</label>
+                                <input type="text" class="form-control" id="contactPerson" placeholder="Add name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="address" class="form-label custom-form-label">Contact Number</label>
+                                <input type="text" class="form-control" id="contactPerson" placeholder="Add number">
+                            </div>
+                        </div>
+        
+                        
+                        <label class="form-label custom-form-label"  style="font-size: 15px;">Enter Address</label>
+        
+                        <div class="mb-3">
+                            <label for="street-address" class="form-label custom-form-label">Street Address</label>
+                            <input type="text" class="form-control" id="street-address" placeholder="Search">
+                        </div>
+        
+                        <div class="row">
+                            
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="building-complex" class="form-label">Street Address</label>
+                                <input type="text" class="form-control" id="building-complex" placeholder="Add">
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="Country" class="form-label">Country</label>
+                                <select class="form-select" id="Country">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">UK</option>
+                                    <option value="option3">USA</option>
+                                    <option value="option4">Canada</option>
+                                    <option value="option5">Australia</option>
+                                    <option value="option6">Germany</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="province" class="form-label">Province</label>
+                                <select class="form-select" id="status">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">Uk</option>
+                                    
+                                  </select>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <select class="form-select" id="city">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="option1">India</option>
+                                    <option value="option2">Uk</option>
+                                    
+                                  </select>
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="suburb" class="form-label">Suburb</label>
+                                <input type="text" class="form-control" id="suburb" placeholder="Add">
+                            </div>
+            
+                            <div class="col-md-4 mb-3">
+                                <label for="postal-code" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postal-code" placeholder="Add">
+                            </div>
+                        </div>
+        
+        
+                        
+        
+                        
+                    </form>
+                    <div class="form-button-container mb-3">
+                        <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+                           <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+                           <span>Delete</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           <button style="font-size: 19px; padding: 10px;border: 1px solid black;border-radius: 10px;width: 160px;font-weight: 500;font-family: DM Sans; background: transparent;">Save</button>
+        
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Next</button>
+        
+                           
+                        </div>
+                        </div>
+                </div>
+        
+                <div class="form-responsive-container">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Opportunity Checklist</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Capture transaction details </span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+                    <form>
+                        <div class="checklist-card-container">
+                            <div class="checklist">
+                                <span>Subcontracting request?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes1" name="request1" value="right">
+                                        <label for="yes1">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no1" name="request1" value="wrong">
+                                        <label for="no1">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Does KGL have capacity to carry out the opportunity?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes2" name="request2" value="right">
+                                        <label for="yes2">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no2" name="request2" value="wrong">
+                                        <label for="no2">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Require heavy capital investment?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes3" name="request3" value="right">
+                                        <label for="yes3">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no3" name="request3" value="wrong">
+                                        <label for="no3">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Repatriation or Personal effects movements?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes4" name="request4" value="right">
+                                        <label for="yes4">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no4" name="request4" value="wrong">
+                                        <label for="no4">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Are payment terms different to KGL?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes5" name="request5" value="right">
+                                        <label for="yes5">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no5" name="request5" value="wrong">
+                                        <label for="no5">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Expectation of unofficial transactions/payments?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes6" name="request6" value="right">
+                                        <label for="yes6">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no6" name="request6" value="wrong">
+                                        <label for="no6">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Profitable Opportunity?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes7" name="request7" value="right">
+                                        <label for="yes7">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no7" name="request7" value="wrong">
+                                        <label for="no7">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="checklist">
+                                <span>Is it an Approved Government entity?</span>
+                                <div class="checklist-radio">
+                                    <div class="custom-radio">
+                                        <input type="radio" id="yes8" name="request8" value="right">
+                                        <label for="yes8">Yes</label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <input type="radio" id="no8" name="request8" value="wrong">
+                                        <label for="no8">No</label>
+                                    </div>
+                                </div>
+                                <div class="verification-status">
+                                    <div class="status-checkbox">
+                                        <span class="icon check">✔</span>
+                                        <span class="icon cross">✔</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        
+        
+                    </form>
+                    <div class="form-button-container mb-3">
+                        <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+                           <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+                           <span>Delete</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           <button style="font-size: 19px; padding: 10px;border: 1px solid black;border-radius: 10px;width: 160px;font-weight: 500;font-family: DM Sans; background: transparent;">Save</button>
+        
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Next</button>
+        
+                           
+                        </div>
+                        </div>
+                </div>
+        
+                <div class="form-responsive-container">
+                    <div class="form-head">
+                        <span style="font-size: 16px; font-weight: 700;">Notes & Documents</span>
+                        <span style="font-size: 12px; font-weight: 400; color: #5F6165;">Add any notes or documents related to opportunity</span>
+                    </div>
+                    <button class="toggle-button">
+                        <img src="ASSETS/IMAGES/Group 1000003014.png" alt="Toggle">
+                    </button>
+                </div>
+                <div class="content-form">
+                    <div class="mb-3">
+                        <label for="job-title" class="form-label custom-edit-button custom-form-label">
+                            <div>Add Notes</div>
+                            <img src="ASSETS/IMAGES/Edit 2.png" alt="">
+                        </label>
+                        <textarea class="form-control" id="job-title" rows="3" placeholder="Start typing notes here"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="upload-wrapper2">
+                            <div class="upload-container2">
+                                <div class="placeholder">
+                                    <img src="ASSETS/IMAGES/Frame.png" alt="Placeholder">
+                                    <span>Upload support documents?</span>
+                                </div>
+                                <input type="file" id="upload-picture" multiple accept="image/*,application/pdf" onchange="previewImage(event)">
+                            </div>
+                        </div>
+                        <div class="uploaded-files2" id="uploaded-files2"></div>
+                    </div>
+
+                    <div class="form-button-container mb-3">
+                        <button style="padding: 10px; color: #FF0C00;background:transparent;font-size: 19px; font-weight: 500;width: 120px;display: flex;border-radius:10px;align-items: center;border: none;">
+                           <img style="margin-right: 10px; width: 30px;" src="ASSETS/IMAGES/Trash 2.png" alt="">
+                           <span>Delete</span>
+                        </button>
+                        <div style="display: flex; width: auto;align-items: center;justify-content: space-evenly;flex-wrap: wrap;">
+                           <button style="font-size: 19px; padding: 10px;border: 1px solid black;border-radius: 10px;width: 160px;font-weight: 500;font-family: DM Sans; background: transparent;">Save</button>
+        
+                           <button style="padding: 11px; color: white;background: black; border-radius: 10px; font-size: 18px; font-weight: 500;width: 180px;">Next</button>
+        
+                           
+                        </div>
+                        </div>
+        
+                    
+        
+                   </div>
+                   
+            </div>
+        </div>
+
+        
+    
+        
+            
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('popupMenu');
+            menu.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.parentElement.nextElementSibling;
+                const img = this.querySelector('img');
+
+                document.querySelectorAll('.content').forEach(c => {
+                    if (c !== content) {
+                        c.classList.remove('show');
+                        c.previousElementSibling.querySelector('img').classList.remove('rotate');
+                    }
+                });
+
+                content.classList.toggle('show');
+                img.classList.toggle('rotate');
+            });
+        });
+
+        document.querySelectorAll('.step').forEach((step, index) => {
+            step.addEventListener('click', () => {
+                document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+                for (let i = 0; i <= index; i++) {
+                    document.querySelectorAll('.step')[i].classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const checklists = document.querySelectorAll('.checklist');
+
+            checklists.forEach(checklist => {
+                const radios = checklist.querySelectorAll('.checklist-radio input[type="radio"]');
+                const statusCheckbox = checklist.querySelector('.status-checkbox');
+                const checkIcon = statusCheckbox.querySelector('.check');
+                const crossIcon = statusCheckbox.querySelector('.cross');
+
+                radios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        if (this.value === 'right') {
+                            statusCheckbox.classList.remove('red');
+                            statusCheckbox.classList.add('green');
+                            checkIcon.style.visibility = 'visible';
+                            crossIcon.style.visibility = 'hidden';
+                        } else {
+                            statusCheckbox.classList.remove('green');
+                            statusCheckbox.classList.add('red');
+                            checkIcon.style.visibility = 'hidden';
+                            crossIcon.style.visibility = 'visible';
+                        }
+                    });
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const assignedDateInput = document.getElementById('assigneddate1');
+            const today = new Date().toISOString().split('T')[0];
+            assignedDateInput.value = today;
+            assignedDateInput.readOnly = true;
+        });
+
+        $(document).ready(function() {
+            $('#province').select2({
+                placeholder: "Select a province",
+                allowClear: true
+            });
+        });
+
+        function previewImage(event) {
+            const files = event.target.files;
+            const uploadedFilesContainer = document.getElementById('uploaded-files2');
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const fileURL = URL.createObjectURL(file);
+                const div = document.createElement('div');
+                div.classList.add('uploaded-file2');
+                div.onclick = function() {
+                    window.open(fileURL, '_blank');
+                };
+
+                const img = document.createElement('img');
+                img.src = 'ASSETS/IMAGES/Frame.png';
+
+                const fileName = document.createElement('span');
+                fileName.textContent = file.name;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.classList.add('delete-button');
+                deleteButton.innerHTML = '&minus;';
+                deleteButton.onclick = function(event) {
+                    event.stopPropagation();
+                    URL.revokeObjectURL(fileURL);
+                    div.remove();
+                };
+
+                div.appendChild(img);
+                div.appendChild(fileName);
+                div.appendChild(deleteButton);
+                uploadedFilesContainer.appendChild(div);
+            }
+        }
+
+    </script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+</html>
